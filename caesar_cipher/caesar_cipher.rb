@@ -26,4 +26,4 @@ end
 
 
 puts caesar_cipher("What a string!", 5)
-puts caesar_cipher("I love you B!", 5)
+puts caesar_cipher("I love you!", 5)
