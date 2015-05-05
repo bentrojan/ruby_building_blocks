@@ -3,9 +3,9 @@ def caesar_cipher(str, key)
 	ans = []
 
 	str.each do |letter|
-		if !!(letter.match(/^[[:alpha:]]$/))
+		if letter.match(/^[[:alpha:]]$/)
 			key.times do
-				letter = letter.next
+				letter.next!
 			end
 		end
 		if letter.length == 2
