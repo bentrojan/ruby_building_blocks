@@ -3,7 +3,7 @@ def caesar_cipher(str, key)
 	ans = []
 
 	str.each do |letter|
-		if letter.match(/^[[:alpha:]]$/)
+		if letter.match(/\w/)
 			key.times do
 				letter.next!
 			end
